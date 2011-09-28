@@ -13,12 +13,14 @@ module Fog
       request :list_metrics
       request :get_metric_statistics
       request :put_metric_data
+      request :put_metric_alarm
 
       model_path 'fog/aws/models/cloud_watch'
       model       :metric
       collection  :metrics
       model       :metric_statistic
       collection  :metric_statistics
+      model       :metric_alarm
 
       class Mock
 
